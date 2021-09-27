@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="body">
+
+  <div class="modal" id="js-modal">
+    <div class="modal-wrapper">
+      <div class="modal-inner" id="js-inner">
+        <button class="modal-close__btn js-close__btn"></button>
+        <ul class="modal-list" id="js-modal__list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <img class="header-img" src="./img/pokemon_logo 1.png" alt="logo" width="610" height="225">
+      <button class="header-btn" id="js-btn"></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="section">
+      <form class="main-form" id="js-form">
+        <select class="main-select" id="js-select">
+          <option value="All">All</option>
+        </select>
+       <div class="search-wrapper">
+        <input class="main-search__input" type="search" id="js-search" placeholder="Search...">
+        <img class="search-img" src="./img/search.svg" alt="search-img" width="24" height="24">
+       </div>
+        <select class="main-filter" id="js-filter">
+          <option value="a-z">Aa-Zz</option>
+          <option value="z-a">Zz-Aa</option>
+          <option value="old-new">Old-New</option>
+          <option value="new-old">New-old</option>
+        </select>
+        <button class="main-button" id="btn">Button</button>
+      </form>
+    </div>
+  </main>
+
+  <ul class="list" id="js-list"></ul>
+
+  <template class="template-card" id="template">
+    <li class="template-card" id="card">
+      <img class="card-img" id="js-img" src="https://picsum.photos/200" alt="img" width="250" height="300">
+      <div class="card-wrapper">
+        <h2 class="card-title" id="title">pokimons</h2>
+        <button class="card-btn" id="js-card-btn"></button>
+      </div>
+      <p class="card-select">grass poison</p>
+      <div class="card-info__wrapper">
+        <span class="card-weight">6.9 kg</span>
+        <span class="card-age">99 age</span>
+      </div>
+    </li>
+  </template>
+
+  <script src="./js/util.js"></script>
+  <script src="./js/pokemons.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
